@@ -143,7 +143,7 @@
 
     async function carregarDados() {
       try {
-        const res = await fetch("http://localhost:5000/api/casos");
+        const res = await fetch("https://back-trab-dados.onrender.com/api/casos");
         dadosCasos = await res.json();
         atualizarGraficos();
         inicializarGraficoModelo();
@@ -281,7 +281,7 @@
 
     async function inicializarGraficoModelo() {
       try {
-        const res = await fetch("http://localhost:5000/api/modelo/coeficientes");
+        const res = await fetch("https://back-trab-dados.onrender.com/api/modelo/coeficientes");
         const data = await res.json();
 
         const processedData = {};
