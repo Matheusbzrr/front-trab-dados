@@ -217,7 +217,7 @@ document.getElementById("dataInicio").addEventListener("change", atualizarGrafic
 document.getElementById("dataFim").addEventListener("change", atualizarGraficos);
 
 async function carregarDados() {
-  const resposta = await fetch('http://127.0.0.1:5000/api/casos');
+  const resposta = await fetch('https://back-trab-dados.onrender.com/api/casos');
   dadosCasos = await resposta.json();
   atualizarGraficos();
 }
